@@ -26,7 +26,7 @@ For further read about open source contributing workflows see any of the followi
 * [crash course in contributing to open source](https://sites.google.com/view/nyc-2020-scikit-sprint) material presented at a scikit-learn sprint,
 * [contributing to NumPy](https://numpy.org/contribute/) with [guides for code contributions](https://numpy.org/devdocs/dev/index.html#development-process-summary),
 * [contributing to Pandas](https://pandas.pydata.org/docs/dev/development/contributing.html),
-* [Developer and Contributor Guides as Scientific Python](https://learn.scientific-python.org/)).
+* [Developer and Contributor Guides at Scientific Python](https://learn.scientific-python.org/)).
 
 #### Writing good bug reports, reproducible examples, etc.
 
@@ -132,7 +132,7 @@ Once you've done at least one of these, you can move to the next step!
 
 ### 1f: Test your package
 
- * you can install your ``pr_review`` package with:
+ * you can install your ``pr_tutorial`` package with:
 
        pip install .
 
@@ -144,9 +144,9 @@ Once you've done at least one of these, you can move to the next step!
 
 ```
 ================================================= test session starts ==================================================
-platform darwin -- Python 3.11.0, pytest-7.2.1, pluggy-1.0.0
-rootdir: /Users/bsipocz/munka/devel/scipy2024/scipy2024_sprints_first_PR/participants/scipy_000
-plugins: remotedata-0.4.0, rerunfailures-10.3, nbval-0.10.0, doctestplus-0.13.0, hypothesis-6.58.1, mock-3.10.0, dependency-0.5.1, filter-subpackage-0.1.2, requests-mock-1.10.0, astropy-header-0.2.2, astropy-0.10.0, cov-4.0.0, openfiles-0.5.0, anyio-3.6.2, arraydiff-0.5.0
+platform darwin -- Python 3.12.1, pytest-8.3.3, pluggy-1.5.0
+rootdir: /Users/bsipocz/munka/IPAC/GRITS_first_PR/participants/bsipocz-2nd
+plugins: astropy-0.11.0, datadir-1.5.0, cov-5.0.0, filter-subpackage-0.2.1.dev4+g588cd55.d20240718, doctestplus-1.2.2.dev18+gab82f3b.d20240715, remotedata-0.4.1, anyio-4.3.0, rerunfailures-14.0, pytest_notebook-0.10.0, astropy-header-0.2.2, pytest_param_files-0.6.0, dependency-0.6.0, hypothesis-6.100.5, asdf-3.2.0, regressions-2.5.0, darkgraylib-1.2.1, arraydiff-0.6.1, nbval-0.11.0, mock-3.14.0, requests-mock-1.12.1
 collected 1 item
 
 pr_tutorial/tests/test_simple_function.py .                                                                      [100%]
@@ -279,7 +279,7 @@ Once you added the remote, you can do:
 to fetch the latest changes from the main repository. Note that this won't update your code - to do
 this, make sure all your changes are committed, and then use:
 
-    git rebase bsipocz/main
+    git rebase -i bsipocz/main
 
 Provided that there are no changes in the main repository that conflict, you should then be good to
 go and your local branch will contain both the latest changes from the main repository, and your local
@@ -299,5 +299,4 @@ https://learngitbranching.js.org/
 Developed for GRITS 2024 by Brigitta Sipőcz &copy; licensed under a
 [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)
 
-Based on earlier versions for
-Scipy Sprints by Jonathan Rocher BSD and multiple iterations of the AstroHackWeek workshop.
+Based on Scipy Sprints by Brigitta Sipőcz and earlier version by Jonathan Rocher BSD and multiple iterations of the AstroHackWeek workshop.
